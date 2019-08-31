@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:layout_marginTop="100dp"
+        android:typeface="monospace"
+        android:textSize="40sp"
+        />
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+
+
+        />
+
+
+    <Button
+        android:id="@+id/first_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/second_button"
+        app:layout_constraintTop_toBottomOf="@id/shape"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+
+        />
+
+    <Button
+        android:id="@+id/second_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shape"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/third_button"
+        app:layout_constraintLeft_toRightOf="@id/second_button"
+        app:layout_constraintTop_toBottomOf="@id/shape"
+        android:layout_marginTop="100dp"
+        android:onClick="onClick"
+
+        />
+
+    <TextView
+        android:id="@+id/contador_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Aciertos:"
+        app:layout_constraintTop_toBottomOf="@id/first_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="16sp"
+        android:textColor="#4CAF50"
+        android:layout_marginLeft="110dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contador_neg"
+        android:text="Errores"
+        app:layout_constraintLeft_toRightOf="@id/contador_pos"
+        app:layout_constraintTop_toBottomOf="@id/third_button"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="90dp"
+        android:textColor="#F44336"
+        android:textSize="16sp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
