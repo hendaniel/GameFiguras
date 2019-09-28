@@ -8,5 +8,18 @@
 
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        android:text="WELCOME"
+        android:textSize="60sp"
+        android:fontFamily="sans-serif-condensed"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
